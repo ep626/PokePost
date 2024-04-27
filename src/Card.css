@@ -1,0 +1,138 @@
+.cards-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #a59898;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: #ffffff; /* Set the default text color to #333 */
+}
+
+.cards-container h2.title, 
+.cards-container h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.card-link{
+  max-width: 800px;
+  margin: 40px 40px;
+  padding: 20px;
+  background-color: #a59898;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.cards-container h3.created_at {
+  font-size: 0.9em;
+  color: #333; /* Updated color */
+}
+
+.cards-container h3.content {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333; /* Updated color */
+}
+
+.card-link img.image {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card-link .upvote, 
+.card-link .editButton {
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #fff; /* Keep the button text color as white for contrast */
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-link .upvote:hover,
+.card-link .editButton:hover {
+  background-color: #0056b3;
+}
+
+.card-link .editButton {
+  background-color: #28a745;
+}
+
+.card-link .editButton:hover {
+  background-color: #19692c;
+}
+
+.card-link {
+  text-decoration: none; /* Removes underline from link */
+  color: inherit; /* Inherits text color from parent */
+  display: block; /* Makes the link fill its container for easier clicking */
+}
+
+.title {
+  font-size: 1.5em; /* Larger font size for the title */
+  margin-bottom: 10px; /* Space between the title and content */
+}
+
+.content {
+  font-size: 1em; /* Standard font size for content */
+  color: #ffffff; /* Slightly lighter color for content */
+  margin-bottom: 20px; /* Space between content and likes */
+}
+
+.cards-container p {
+  margin: 0; /* Removes default margin from paragraph tags */
+}
+
+/* Comments Section Styles */
+.comments-section {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333; /* Light gray background for the comments section */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.comments-section h4 {
+  margin-bottom: 10px;
+  color: white; /* Darker text for headers */
+}
+
+.comments-section p {
+  background: #a59898; /* White background for individual comments */
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Styling for the input box and submit button in the comments form */
+.comments-section form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comments-section input[type="text"] {
+   /* Allows the input to expand and fill the space */
+  padding: 8px;
+  margin-right: 8px; /* Space between input and button */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comments-section button {
+  padding: 8px 16px;
+  background-color: #007BFF; /* Matching the primary color theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.comments-section button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

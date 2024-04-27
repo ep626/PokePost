@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Modern looking font */
+}
+
+/* Ensure full height and no overflow */
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Layout styles */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;/* Light grey background */
+}
+
+/* Top navigation bar styles */
+.navbar {
+  position: fixed; /* Fixes navbar to the top of the screen */
+  left: 0; /* Aligns navbar to the left edge of the screen */
+  right: 0; /* Aligns navbar to the right edge of the screen */
+  width: 100%; /* Ensures navbar spans the full width */
+  background-color: rgb(236, 45, 45); /* Dark grey background for contrast */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-end; /* Aligns children to the right */
+  margin-right: 20px;
+}
+
+.navbar li {
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Adds underline on hover for better UI interaction */
+}
+
+/* Content styles */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Allows scrolling within the content area */
+  margin-top: 80px;
+  max-width: 2000px;
+}
+.navbar .title {
+  color: #fff; /* White color for the title */
+  font-size: 20px; /* Size of the title */
+  font-weight: bold; /* Make the title bold */
+  position: absolute; /* Position the title absolutely within the navbar */
+  left: 20px; /* 20px from the left edge of the navbar */
+  top: 50%; /* Centered vertically */
+  transform: translateY(-50%); /* Offset for perfect centering */
+}
+
+.navbar form {
+  display: flex; /* Ensures that form contents are laid out inline */
+  align-items: center; /* Vertically centers the form contents */
+  margin-left: 20px; /* Provides a margin on the left */
+}
+
+.navbar input, .navbar button {
+  margin: 0 5px; /* Adds a small margin between the button and input */
+}
+
+.navbar input {
+  order: 1; /* Ensures the input appears first */
+}
+
+.navbar button {
+  order: 2; /* Ensures the button appears second, right after the input */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  padding: 8px 15px; /* Adjusts padding for better visual appeal */
+}
+
+/* Additional styling to ensure the submit button appears right next to the input without gaps */
+.navbar input {
+  flex-grow: 1; /* Allows the input to take up any available horizontal space */
+  margin-right: 5px; /* Ensures there is a margin between the input and the button */
+}
+
+.navbar button {
+  white-space: nowrap; /* Prevents the button text from wrapping */
+}

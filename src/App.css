@@ -1,0 +1,41 @@
+/* Root and Main Container Adjustments */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-container {
+  padding: 40px 100px; /* Increased padding for more vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the buttons container to layout buttons on the right and left */
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Places one button on the left, one on the right */
+  margin-bottom: 20px; /* Extra space below buttons before content */
+}
+
+.main-container button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* A nice blue shade */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.main-container button:active {
+  transform: translateY(1px);
+}
